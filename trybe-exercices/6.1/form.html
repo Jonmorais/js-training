@@ -17,11 +17,36 @@
           <legend>Informações Pessoais</legend>
           <div class="box-style">
             <label for="full-name">Nome:</label>
-            <input type="text" id="full-name" maxlength="40" required>
+            <input type="text" name="full-name" id="full-name" maxlength="40" required>
           </div>
           <div class="box-style">
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" maxlength="50" required>
+          </div>
+          <div class="box-style">
+            <label for="cpf">CPF: </label>
+            <input type="number" name="cpf" id="cpf" maxlength="11" required>
+          </div>
+          <div class="box-style">
+            <label for="adress">Endereço: </label>
+            <input type="textarea" name="adress" id="adress" maxlength="200" required>
+          </div>
+          <div class="box-style">
+            <label for="city">Cidade: </label>
+            <input type="text" name="city" id="city" maxlength="200" required>
+          </div>
+          <div class="box-style">
+            <label for="state">Estado: </label>
+            <select name="state" id="select-state" required>
+            </select>
+          </div>
+          <div class="box-style">
+            <fieldset id="house" required>
+              <legend>Tipo de Moradia</legend>
+              <br>
+              <input type="radio" name="house-type" id="house-type">Casa
+              <input type="radio" name="house-type" id="house-type">Apartamento
+            </fieldset>
           </div>
         </fieldset>
       </div>
