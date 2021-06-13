@@ -4,66 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header class="box-style">
       <h1>Cadastro de Currículo</h1>
     </header>
     <form class="box-style" action="" method="GET">
-      <div class="box-style">
-        <fieldset class="fieldset">
-          <legend>Informações Pessoais</legend>
-          <div class="box-style">
-            <label for="full-name">Nome:</label>
-            <input type="text" name="full-name" id="full-name" maxlength="40" required>
+      <div >
+        <div class="box-align">
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="full-name">Nome:</label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="text"
+              name="full-name"
+              id="full-name"
+              maxlength="40"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" maxlength="50" required>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="email">Email: </label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="email"
+              name="email"
+              id="email"
+              maxlength="50"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="cpf">CPF: </label>
-            <input type="number" name="cpf" id="cpf" maxlength="11" required>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="cpf">CPF: </label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="tel"
+              name="cpf"
+              id="cpf"
+              maxlength="11"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="adress">Endereço: </label>
-            <input type="text" name="adress" id="adress" maxlength="200" required>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="adress">Endereço: </label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="text"
+              name="adress"
+              id="adress"
+              maxlength="200"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="city">Cidade: </label>
-            <input type="text" name="city" id="city" maxlength="200" required>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="city">Cidade: </label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="text"
+              name="city"
+              id="city"
+              maxlength="200"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="state">Estado: </label>
-            <select name="state" id="select-state" required>
-            </select>
+
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="state">Estado:</label>
+            </div>
+            <select
+              class="btn btn-primary dropdown-toggle"
+              name="state"
+              id="select-state"
+              required
+            ></select>
           </div>
-          <div class="box-style">
-            <fieldset id="house" required>
-              <legend>Tipo de Moradia</legend>
-              <br>
-              <input type="radio" name="house-type" id="house-type">Casa
-              <input type="radio" name="house-type" id="house-type">Apartamento
-            </fieldset>
+          <div class="box-inside">
+            <div class="box-inside">
+              <div class="box-inside">
+                <label>Tipo de Moradia:</label>
+              </div>
+              <div>
+                <div id="tipo-de-moradia" class="box-align">
+                  <div class="space">
+                    <label for="house-type">Casa</label>
+                    <input type="radio" name="house-type" id="house-type" />
+                  </div>
+                  <div class="space">
+                    <label for="house-type-ap">Apartamento</label>
+                    <input type="radio" name="house-type" id="house-type-ap" />
+                  </div>  
+                </div>
+               </div>
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="fieldset">
-          <legend>Último Emprego</legend>
-          <div class="box-style">
-            <label for="resume">Resumo do seu Currículo:</label>
-            <textarea class="fieldset" name="resume" id="resume" cols="50" rows="10" maxlength="1000" required></textarea>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="resume">Resumo do seu Currículo:</label>
+            </div>
+            <textarea
+              class="form-control input-style"
+              name="resume"
+              id="resume"
+              cols="50"
+              rows="10"
+              maxlength="1000"
+              required
+            ></textarea>
           </div>
-          <div class="box-style">
-            <label for="role">Cargo: </label>
-            <input type="text" name="cargo" id="role" maxlength="40" required>
+          <div class="box-inside">
+            <div class="space">
+              <label for="role">Cargo:</label>
+            </div>
+            <input
+              class="form-control input-style"
+              type="text"
+              name="cargo"
+              id="role"
+              maxlength="40"
+              required
+            />
           </div>
-          <div class="box-style">
-            <label for="role-description">Descrição do Cargo</label>
-            <textarea name="role-description" id="role-description" cols="50" rows="10"></textarea>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="role-description">Descrição do Cargo:</label>
+            </div>
+            <textarea
+              class="form-control input-style"
+              name="role-description"
+              id="role-description"
+              cols="50"
+              rows="10"
+            ></textarea>
           </div>
-        </fieldset>
+          <div class="box-inside">
+            <div class="box-inside">
+              <label for="date">Data de início: </label>
+            </div>
+            <div class="button">
+              <input class="btn btn-primary" type="date" name="date" id="date" />
+            </div>
+          </div>
+
+          <div class="space button">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
       </div>
     </form>
     <script src="script.js"></script>
