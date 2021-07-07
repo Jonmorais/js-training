@@ -97,8 +97,3 @@ const gameActions = {
   },
   turnResults: () => battleMembers,
 };
-
-gameActions.warriorTurn(warriorAttack);
-gameActions.mageTurn(mageAttack);
-gameActions.monsterTurn(dragonAttack);
-console.log(gameActions.turnResults());
